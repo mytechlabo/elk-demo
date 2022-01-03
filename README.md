@@ -161,3 +161,4 @@ $ curl -X GET "http://localhost:9200/accounts/_search?pretty" -H 'Content-Type: 
 # Reference
 1. [Giới thiệu và cài đặt Elasticsearch và Kibana bằng Docker](https://xuanthulab.net/gioi-thieu-va-cai-dat-elasticsearch-va-kibana-bang-docker.html)
 2. [Cài đặt Elasticsearch trên CentOS](https://xuanthulab.net/cai-dat-elasticsearch-tren-centos.html)
+3. [Laravel tìm kiếm dữ liệu với Elasticsearch](https://viblo.asia/p/laravel-tim-kiem-du-lieu-voi-elasticsearch-bJzKmGgOl9N)

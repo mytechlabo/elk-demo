@@ -1,0 +1,17 @@
+{
+    "name": "toan.trinh/php",
+    "autoload": {
+        "psr-4": {
+            "ToanTrinh\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "toan.trinh",
+            "email": "toan.trinh@ntq-solution.com.vn"
+        }
+    ],
+    "require": {
+        "elasticsearch/elasticsearch": "^7.16"
+    }
+}
