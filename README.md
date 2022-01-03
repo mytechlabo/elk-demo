@@ -151,14 +151,8 @@ $ curl -X GET "http://localhost:9200/accounts/_search?pretty" -H 'Content-Type: 
 }'
 ```
 
-# Elasticsearch with PHP
-```sh
-# Run local server PHP
-$ php -S localhost:8888
-```
-
-
 # Reference
 1. [Giới thiệu và cài đặt Elasticsearch và Kibana bằng Docker](https://xuanthulab.net/gioi-thieu-va-cai-dat-elasticsearch-va-kibana-bang-docker.html)
 2. [Cài đặt Elasticsearch trên CentOS](https://xuanthulab.net/cai-dat-elasticsearch-tren-centos.html)
-3. [Laravel tìm kiếm dữ liệu với Elasticsearch](https://viblo.asia/p/laravel-tim-kiem-du-lieu-voi-elasticsearch-bJzKmGgOl9N)
+3. [Tìm hiểu và cài đặt ELK Elasticsearch Logstash Kibana](https://xuanthulab.net/tim-hieu-va-cai-dat-elk-elasticsearch-logstash-kibana.html)
+4. [Laravel tìm kiếm dữ liệu với Elasticsearch](https://viblo.asia/p/laravel-tim-kiem-du-lieu-voi-elasticsearch-bJzKmGgOl9N)
