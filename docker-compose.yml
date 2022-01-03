@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch-service
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.0.1
+    environment:
+      - node.name=elasticsearch
+      - cluster.name=datasearch
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - cluster.initial_master_nodes=elasticsearch
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./docker/esdata:/usr/share/elasticsearch/data
+
+  kibana:
+    container_name: kibana-service
+    image: docker.elastic.co/kibana/kibana:7.0.1
+    ports:
+      - "5601:5601"
+    # volumes:
+    #   ./kibana.yml:/usr/share/kibana/config/kibana.yml
+
+# volumes:
+#   esdata:
+#     driver_opts:
+#       type: tmpfs # nfs or tmpfs
+#       device: /Users/toan.trinh/Documents/workspace/_mytechlabo/_devops/elk-demo/docker/esdata
+#       o: bind
