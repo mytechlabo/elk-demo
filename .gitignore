@@ -1,2 +1,2 @@
 docker/esdata
-php/vendor
+src/vendor

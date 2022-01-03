@@ -132,17 +132,11 @@ $ curl -X GET "http://localhost:9200/accounts/_search?pretty" -H 'Content-Type: 
     "query": {
         "bool": {
             "should": [
-                {"match": {
-                    "address": "mill"
-                }},
-                {"match": {
-                    "address": "lane"
-                }}
+                {"match": {"address": "mill"}},
+                {"match": {"address": "lane"}}
             ],
             "must_not": [
-                {"match": {
-                    "state": "IL"
-                }}
+                {"match": {"state": "IL"}}
             ]
         }
     },
@@ -155,6 +149,12 @@ $ curl -X GET "http://localhost:9200/accounts/_search?pretty" -H 'Content-Type: 
         }
     ]
 }'
+```
+
+# Elasticsearch with PHP
+```sh
+# Run local server PHP
+$ php -S localhost:8888
 ```
 
 
